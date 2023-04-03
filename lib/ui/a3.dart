@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+mport 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class Blogs3Screen extends StatefulWidget {
@@ -12,12 +12,14 @@ class _Blogs3ScreenState extends State<Blogs3Screen> {
   WebViewController controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
     ..setBackgroundColor(const Color(0x00000000))
-    ..loadRequest(Uri.parse(
-        'https://www.nationwide.com/lc/resources/home/articles/senior-citizen-safety'));
+    ..loadRequest(Uri.parse('https://dyutiprovo.github.io/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Health Tips for the aged')),
+      appBar: AppBar(
+        title: const Text('Health Tips for the Old'),
+        backgroundColor: Color(0xFF4e5ae8),
+      ),
       body: WebViewWidget(controller: controller),
     );
   }
