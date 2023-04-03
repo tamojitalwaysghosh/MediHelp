@@ -11,6 +11,7 @@ import 'package:medihelp/ui/widgets/task_tile.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:medihelp/ui/widgets/text_widget.dart';
 
 import '../models/task.dart';
 
@@ -55,9 +56,18 @@ class _HomePageState extends State<HomePage> {
             color: Get.isDarkMode ? Colors.white : Colors.black,
           ),
         ),
+        centerTitle: true,
+        title: TextWidget(
+          text: "MediHelp",
+          color: Get.isDarkMode ? Colors.white : Colors.black,
+          fontsize: 24,
+          fontweight: FontWeight.w600,
+        ),
         actions: [
-          CircleAvatar(
-            backgroundImage: AssetImage('assets/appicon.png'),
+          Image(
+            image: AssetImage('assets/healthcare.png'),
+            width: 33,
+            height: 33,
           ),
           const SizedBox(
             width: 20,
