@@ -27,7 +27,9 @@ class _BlogsScreenState extends State<BlogsScreen> {
                   fontsize: 24,
                   fontweight: FontWeight.w500,
                   text: "Health Articles",
-                  color: Color.fromARGB(255, 35, 34, 34)),
+                  color: Get.isDarkMode
+                      ? Colors.white
+                      : Color.fromARGB(255, 35, 34, 34)),
             ),
           ),
           AticleWidget(
