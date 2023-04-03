@@ -12,12 +12,14 @@ class _Blogs2ScreenState extends State<Blogs2Screen> {
   WebViewController controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
     ..setBackgroundColor(const Color(0x00000000))
-    ..loadRequest(Uri.parse(
-        'https://www.healthinaging.org/tools-and-tips/tip-sheet-home-safety-tips-older-adults'));
+    ..loadRequest(Uri.parse('https://sm139.github.io/'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Health Tips for middle aged')),
+      appBar: AppBar(
+        title: const Text('Health Tips for middle aged'),
+        backgroundColor: Color(0xFF4e5ae8),
+      ),
       body: WebViewWidget(controller: controller),
     );
   }
