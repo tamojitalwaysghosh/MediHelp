@@ -34,7 +34,9 @@ class _MyWidgetState extends State<MyWidget> {
             height: 20,
           ),
           TextWidget(
-            color: Color.fromARGB(255, 32, 32, 32),
+            color: Get.isDarkMode
+                      ? Colors.white
+                      : Color.fromARGB(255, 35, 34, 34)),
             fontsize: 20,
             fontweight: FontWeight.w400,
             text: "Explore Nearby",
@@ -120,7 +122,9 @@ class _MyWidgetState extends State<MyWidget> {
             height: 20,
           ),
           TextWidget(
-            color: Color.fromARGB(255, 32, 32, 32),
+            color:  Get.isDarkMode
+                      ? Colors.white
+                      : Color.fromARGB(255, 35, 34, 34)),
             fontsize: 20,
             fontweight: FontWeight.w400,
             text: "Speed Dial",
